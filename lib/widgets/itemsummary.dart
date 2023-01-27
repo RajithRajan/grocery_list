@@ -34,13 +34,23 @@ class ItemSummary extends StatelessWidget {
         child: Row(
           children: [
             const Flexible(
-                flex: 1, fit: FlexFit.tight, child: Text('Item Count :')),
+              flex: 1,
+              fit: FlexFit.tight,
+              child: FittedBox(
+                child: Text('Item Count :'),
+              ),
+            ),
             Flexible(
                 flex: 1,
                 fit: FlexFit.tight,
                 child: Text('${groceries.length}')),
             const Flexible(
-                flex: 1, fit: FlexFit.tight, child: Text('Approx Weight :')),
+              flex: 1,
+              fit: FlexFit.tight,
+              child: FittedBox(
+                child: Text('Approx Weight :'),
+              ),
+            ),
             Flexible(flex: 1, fit: FlexFit.tight, child: Text('$totalWeight')),
           ],
         ));

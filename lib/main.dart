@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import './wigets/itemlist.dart';
-import './wigets/newitem.dart';
+import 'widgets/itemlist.dart';
+import 'widgets/newitem.dart';
 import 'models/gritem.dart';
-import 'wigets/itemsummary.dart';
+import 'widgets/itemsummary.dart';
 
 void main() {
   runApp(const MyApp());
@@ -91,7 +91,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         IconButton(
           icon: const Icon(
-            Icons.add_alarm,
+            Icons.add,
           ),
           onPressed: (() => startNewItemadd(context)),
         ),
